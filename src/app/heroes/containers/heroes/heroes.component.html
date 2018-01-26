@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col text-center mt-5">
+            <h1>{{title}}</h1>
+            <h2>{{ hero.name | uppercase }} Details</h2>
+            <div><span>id: </span>{{hero.id}}</div>
+            <div>
+                <label>name:
+                    <input [(ngModel)]="hero.name" placeholder="name">
+              </label>
+            </div>
+            <div>
+                <a href="detail/{{hero.name}}" class="btn btn-primary">GO</a>
+            </div>
+        </div>
+    </div>
+</div>
